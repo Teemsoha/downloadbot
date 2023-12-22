@@ -46,9 +46,9 @@ mis = {
 }
 
 token = TOKEN #توكنك
-id_ch = int("-1001666751945") #ايدي قناتك
-username = " @ibaghdady"  #يوزر قناك بعد @
-dev = int("2010789056") #ggايدي حساب
+id_ch = int("-1001841271787") #ايدي قناتك
+username = " @Mlze1bot"  #يوزر قناك بعد @
+dev = int("6218149232") #ggايدي حساب
 in_msg = """
 دخل شخص جديد للبوت الخاص بك.
 
@@ -61,10 +61,9 @@ in_msg = """
 
 ch_msg = """
 🚧┇عذراً، عليك الأشتراك في قنوات البوت أولاً،
-🚧┇القناة الأولى: @iBaghdady،
-🚧┇القناة الثانية: @jjgpp.
+🚧┇القناة : @Mlze1bot.
 """
-name_ch1 = "أنا بغدادي🌿"
+name_ch1 = "سهــئ 🌿"
 name_ch2 = "سـِلاح"
 
 try:
@@ -77,11 +76,11 @@ def is_member(user_id):
 	one = False
 	two = False
 	get = requests.get(f"https://api.telegram.org/bot{token}/getchatmember?chat_id=@iBaghdady&user_id={user_id}").text
-	if user_id == "@iBaghdady" or "member" in get or "creator" in get or "administartor" in get:
+	if user_id == "@Mlze1bot" or "member" in get or "creator" in get or "administartor" in get:
 		one = True
 		
 	get = requests.get(f"https://api.telegram.org/bot{token}/getchatmember?chat_id=@jjgpp&user_id={user_id}").text
-	if user_id == "@jjgpp" or "member" in get or "creator" in get or "administartor" in get:
+	if user_id == "@Mlze1bot" or "member" in get or "creator" in get or "administartor" in get:
 		two = True
 	
 	if one == True and two == True:
@@ -105,13 +104,9 @@ def Welcome(message):
 				reply_markup=km().add(
 					btn(
 						text=name_ch1,
-						url="https://t.me/iBaghdady"
+						url="https://t.me/Mlze1bot"
 						)
-					).add(btn(
-						text=name_ch2,
-						url="https://t.me/JJGPP"
-						)
-					)
+				        )
 				)
 		members = open("members.txt","r")
 		if str(message.from_user.id) not in str(members.read()):
