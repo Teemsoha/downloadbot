@@ -75,11 +75,11 @@ except Exception as error:
 def is_member(user_id):
 	one = False
 	two = False
-	get = requests.get(f"https://api.telegram.org/bot{token}/getchatmember?chat_id=@iBaghdady&user_id={user_id}").text
+	get = requests.get(f"https://api.telegram.org/bot{token}/getchatmember?chat_id=@Mlze1bot&user_id={user_id}").text
 	if user_id == "@Mlze1bot" or "member" in get or "creator" in get or "administartor" in get:
 		one = True
 		
-	get = requests.get(f"https://api.telegram.org/bot{token}/getchatmember?chat_id=@jjgpp&user_id={user_id}").text
+	get = requests.get(f"https://api.telegram.org/bot{token}/getchatmember?chat_id=@Mlze1bot&user_id={user_id}").text
 	if user_id == "@Mlze1bot" or "member" in get or "creator" in get or "administartor" in get:
 		two = True
 	
@@ -124,9 +124,9 @@ def Welcome(message):
 المواقع المدعومة ✨:
 (يوتيوب، انستغرام،تيك توك، بنترست،ثريدز،تويتر،سناب جات،سبوتيفاي)
 يمكنك التحميل من اليوتيوب من خلال البوت التالي 
-@Youtube69bbot
+
 	
-	المالك @Rozs23bot
+	
 	.''',parse_mode="markdown",reply_markup=km([[btn("كيفية التحميل؟",callback_data="help")]]))
 	else:
 		bot.reply_to(message,"""
@@ -137,9 +137,9 @@ def Welcome(message):
 المواقع المدعومة ✨:
 (يوتيوب، انستغرام،تيك توك، بنترست،ثريدز،تويتر،سناب جات،سبوتيفاي)
 يمكنك التحميل من اليوتيوب من خلال البوت التالي 
-@Youtube69bbot
+
 	
-المالك @Rozs23bot.''',parse_mode="markdown",reply_markup=km([[btn("كيفية التحميل؟",callback_data="help")]]))
+.''',parse_mode="markdown",reply_markup=km([[btn("كيفية التحميل؟",callback_data="help")]]))
 
 @bot.message_handler(regexp="instagram.com")
 def instadown(message):
