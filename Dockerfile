@@ -1,7 +1,7 @@
 FROM python:latest
 
 
-RUN git clone https://github.com/Asaaq-ali/downloadbot.git /downloadbot
+RUN git clone https://github.com/Teemsoha/downloadbot.git /downloadbot
 WORKDIR /downloadbot
 RUN python -m pip install --upgrade pip
 RUN python -m pip install --no-cache-dir -r downloadbot/requirements.txt
