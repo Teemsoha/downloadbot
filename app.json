@@ -13,7 +13,7 @@
   "env": {
     "BOT_TOKEN": {
       "description": "Your bot token",
-      "value": "",
+      "value": "7125295143:AAE1t8O67DVQ7mCjoqjI6t-MLE0CyJ_8dvI",
       "required": true
     }
   },
