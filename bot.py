@@ -47,7 +47,7 @@ mis = {
 
 token = TOKEN #توكنك
 id_ch = int("-1001916609574") #ايدي قناتك
-username = "@ashsjdjdkdv"  #يوزر قناك بعد @
+username = "@My1mind1"  #يوزر قناك بعد @
 dev = int("6218149232") #ggايدي حساب
 
 in_msg = """
@@ -62,7 +62,7 @@ in_msg = """
 
 ch_msg = """
 🚧┇عذراً، عليك الأشتراك في قنوات البوت أولاً،
-🚧┇القناة : @Mlze1bot.
+🚧┇القناة : @My1mind1.
 """
 name_ch1 = "سهــئ 🌿"
 name_ch2 = "سـِلاح"
@@ -77,11 +77,11 @@ def is_member(user_id):
 	one = False
 	two = False
 	get = requests.get(f"https://api.telegram.org/bot{token}/getchatmember?chat_id=@Mlze1bot&user_id={user_id}").text
-	if user_id == "@Mlze1bot" or "member" in get or "creator" in get or "administartor" in get:
+	if user_id == "@My1mind1" or "member" in get or "creator" in get or "administartor" in get:
 		one = True
 		
 	get = requests.get(f"https://api.telegram.org/bot{token}/getchatmember?chat_id=@Mlze1bot&user_id={user_id}").text
-	if user_id == "@Mlze1bot" or "member" in get or "creator" in get or "administartor" in get:
+	if user_id == "@My1mind1" or "member" in get or "creator" in get or "administartor" in get:
 		two = True
 	
 	if one == True and two == True:
@@ -105,7 +105,7 @@ def Welcome(message):
 				reply_markup=km().add(
 					btn(
 						text=name_ch1,
-						url="https://t.me/Mlze1bot"
+						url="https://t.me/My1mind1"
 						)
 				        )
 				)
@@ -120,12 +120,11 @@ def Welcome(message):
 		else:
 			pass
 		bot.reply_to(message,f'''- [{name}](tg://settings)
- مرحباً  بك في بوت التحميل  👋🦇❤️‍🔥
+  ** مرحباً  بك في بوت التحميل  👋🦇❤️‍🔥
 يمكنك من خلالي تحميل الوسائط من اغلب مواقع التواصل الاجتماعي.
 المواقع المدعومة ✨:
 (يوتيوب، انستغرام،تيك توك، بنترست،ثريدز،تويتر،سناب جات،سبوتيفاي)
-يمكنك التحميل من اليوتيوب من خلال البوت التالي 
-
+يمكنك التحميل من اليوتيوب من خلال البوت التالي **
 	
 	
 	.''',parse_mode="markdown",reply_markup=km([[btn("كيفية التحميل؟",callback_data="help")]]))
@@ -133,11 +132,11 @@ def Welcome(message):
 		bot.reply_to(message,"""
 مرحبا بك سيدي في بوتك اختر ادناه...""",reply_markup=btns)
 		bot.reply_to(message,f'''- - [{name}](tg://settings)
-مرحباً  بك في بوت التحميل  👋🦇❤️‍🔥
+** مرحباً  بك في بوت التحميل  👋🦇❤️‍🔥
 يمكنك من خلالي تحميل الوسائط من اغلب مواقع التواصل الاجتماعي.
 المواقع المدعومة ✨:
 (يوتيوب، انستغرام،تيك توك، بنترست،ثريدز،تويتر،سناب جات،سبوتيفاي)
-يمكنك التحميل من اليوتيوب من خلال البوت التالي 
+يمكنك التحميل من اليوتيوب من خلال البوت التالي **
 
 	
 .''',parse_mode="markdown",reply_markup=km([[btn("كيفية التحميل؟",callback_data="help")]]))
@@ -288,11 +287,11 @@ def ytube(message):
 			reply_markup=km().add(
 				btn(
 					text=name_ch1,
-					url="https://t.me/iBaghdady"
+					url="https://t.me/My1mind1"
 					)
 				).add(btn(
 					text=name_ch2,
-					url="https://t.me/JJGPP"
+					url="https://t.me/My1mind1"
 					)
 				)
 			)
@@ -348,11 +347,11 @@ def tiktokdown(message):
 			reply_markup=km().add(
 				btn(
 					text=name_ch1,
-					url="https://t.me/iBaghdady"
+					url="https://t.me/My1mind1"
 					)
 				).add(btn(
 					text=name_ch2,
-					url="https://t.me/JJGPP"
+					url="https://t.me/My1mind1"
 					)
 				)
 			)
@@ -443,11 +442,11 @@ def pintrst(message):
 			reply_markup=km().add(
 				btn(
 					text=name_ch1,
-					url="https://t.me/iBaghdady"
+					url="https://t.me/My1mind1"
 					)
 				).add(btn(
 					text=name_ch2,
-					url="https://t.me/JJGPP"
+					url="https://t.me/My1mind1"
 					)
 				)
 			)
@@ -496,11 +495,11 @@ def spotyyify(message):
 			reply_markup=km().add(
 				btn(
 					text=name_ch1,
-					url="https://t.me/iBaghdady"
+					url="https://t.me/My1mind1"
 					)
 				).add(btn(
 					text=name_ch2,
-					url="https://t.me/JJGPP"
+					url="https://t.me/My1mind1"
 					)
 				)
 			)
@@ -549,11 +548,11 @@ def twitter(message):
 			reply_markup=km().add(
 				btn(
 					text=name_ch1,
-					url="https://t.me/iBaghdady"
+					url="https://t.me/My1mind1"
 					)
 				).add(btn(
 					text=name_ch2,
-					url="https://t.me/JJGPP"
+					url="https://t.me/My1mind1"
 					)
 				)
 			)
@@ -594,11 +593,11 @@ def snapchatdef(message):
 			reply_markup=km().add(
 				btn(
 					text=name_ch1,
-					url="https://t.me/iBaghdady"
+					url="https://t.me/My1mind1"
 					)
 				).add(btn(
 					text=name_ch2,
-					url="https://t.me/JJGPP"
+					url="https://t.me/My1mind1"
 					)
 				)
 			)
@@ -636,11 +635,11 @@ def snapchatdefstory(message):
 			reply_markup=km().add(
 				btn(
 					text=name_ch1,
-					url="https://t.me/iBaghdady"
+					url="https://t.me/My1mind1"
 					)
 				).add(btn(
 					text=name_ch2,
-					url="https://t.me/JJGPP"
+					url="https://t.me/My1mind1"
 					)
 				)
 			)
@@ -667,7 +666,7 @@ def snapchatdefstory(message):
 			bot.send_chat_action(message.chat.id,action='upload_video')
 			bot.send_media_group(message.chat.id,media)
 			media.clear()
-		bot.reply_to(message,f'تم تحميل الستوريات.\n{title}\n@ibaghdady')
+		bot.reply_to(message,f'تم تحميل الستوريات.\n{title}\n@My1mind1')
 		bot.delete_message(message.chat.id,m.message_id)
 		#os.remove(f"video{message.chat.id}.mp4")
 	except Exception as error:
@@ -680,7 +679,7 @@ def snapchatdefstory(message):
 						bot.send_video(message.chat.id,i["snapUrls"]["mediaUrl"])
 					else:
 						bot.send_video(message.chat.id,i["snapUrls"]["mediaUrl"])
-				bot.reply_to(message,f'تم تحميل الستوريات.\n{title}\n@ibaghdady')
+				bot.reply_to(message,f'تم تحميل الستوريات.\n{title}\n@My1mind1')
 				bot.delete_message(message.chat.id,m.message_id)
 			except Exception as error:
 				print(error)
@@ -711,11 +710,11 @@ def threds(message):
 			reply_markup=km().add(
 				btn(
 					text=name_ch1,
-					url="https://t.me/iBaghdady"
+					url="https://t.me/My1mind1"
 					)
 				).add(btn(
 					text=name_ch2,
-					url="https://t.me/JJGPP"
+					url="https://t.me/My1mind1"
 					)
 				)
 			)
@@ -773,7 +772,7 @@ def facbok(message):
 {error}
 """)
 
-@bot.message_handler(commands=["search"])
+@bot.message_handler(commands=["بحث"])
 def searchyout(message):
 	name = message.from_user.first_name
 	id = message.from_user.id
@@ -784,17 +783,17 @@ def searchyout(message):
 			reply_markup=km().add(
 				btn(
 					text=name_ch1,
-					url="https://t.me/iBaghdady"
+					url="https://t.me/My1mind1"
 					)
 				).add(btn(
 					text=name_ch2,
-					url="https://t.me/JJGPP"
+					url="https://t.me/My1mind1"
 					)
 				)
 			)
 	if len(message.text.split(None, 1)) < 2:
 		return bot.reply_to(message,"اكتب شيء للبحث عنه.")
-	#query = message.text.replace("/search ","")
+	#query = message.text.replace("/بحث ","")
 	query = message.text.split(None, 1)[1]
 	re = YoutubeSearch(query, max_results=5).to_dict()
 	buttons = km()
@@ -818,11 +817,11 @@ def from_user(message):
 			reply_markup=km().add(
 				btn(
 					text=name_ch1,
-					url="https://t.me/iBaghdady"
+					url="https://t.me/My1mind1"
 					)
 				).add(btn(
 					text=name_ch2,
-					url="https://t.me/JJGPP"
+					url="https://t.me/My1mind1"
 					)
 				)
 			)
@@ -899,11 +898,11 @@ def sterad(message):
 			reply_markup=km().add(
 				btn(
 					text=name_ch1,
-					url="https://t.me/iBaghdady"
+					url="https://t.me/My1mind1"
 					)
 				).add(btn(
 					text=name_ch2,
-					url="https://t.me/JJGPP"
+					url="https://t.me/My1mind1"
 					)
 				)
 			)
@@ -996,9 +995,9 @@ def call(call):
 		vid_id = call.data.split("AUDIO")[1]
 		url = f'https://youtu.be/{vid_id}'
 		try:
-			downloading = km([[btn(" أنا بغدادي🌿",url="https://t.me/iBaghdady ")]])
-			uploading = km([[btn(" أنا بغدادي🌿",url="https://t.me/iBaghdady ")]])
-			erroring = km([[btn("Error ⚠️",url="https://t.me/iBaghdady ")]])
+			downloading = km([[btn(" أنا صدامي🌿",url="https://t.me/My1mind1 ")]])
+			uploading = km([[btn(" أنا بعثي🌿",url="https://t.me/My1mind1 ")]])
+			erroring = km([[btn("Error ⚠️",url="https://t.me/My1mind1 ")]])
 			bot.edit_message_caption(
 				chat_id=call.message.chat.id,
 				caption="**جاري التحميل ..**",
@@ -1082,9 +1081,9 @@ def call(call):
 		try:
 			vid_id = call.data.split("VIDEO")[1]
 			url = f'https://youtu.be/{vid_id}'
-			downloading = km([[btn(" أنا بغدادي🌿",url="https://t.me/iBaghdady ")]])
-			uploading = km([[btn(" أنا بغدادي🌿",url="https://t.me/iBaghdady ")]])
-			erroring = km([[btn("Error ⚠️",url="https://t.me/iBaghdady ")]])
+			downloading = km([[btn(" أنا صدامي🌿",url="https://t.me/My1mind1 ")]])
+			uploading = km([[btn(" أنا بعثي🌿",url="https://t.me/My1mind1 ")]])
+			erroring = km([[btn("Error ⚠️",url="https://t.me/My1mind1 ")]])
 			bot.edit_message_caption(
 				chat_id=call.message.chat.id,
 				caption="**جاري التحميل ..**",
@@ -1173,9 +1172,8 @@ def call(call):
 
 3. بينترست: ارسال رابط الفيديو فقط
 
-4. يوتيوب: ارسال رابط الفيديو او اذا اردت البحث عليك وضع /search قبل كلمة البحث
+4. يوتيوب: ارسال رابط الفيديو او اذا اردت البحث عليك وضع /بحث قبل كلمة البحث
 او يمكنك التحميل من اليوتيوب من خلال البوت  التالي   
-@Youtube69bbot
 
 الباقي كلهم ارسال الرابط فقط.""",call.message.chat.id,call.message.message_id)
 	else:
@@ -1193,11 +1191,11 @@ def ada(message):
 			reply_markup=km().add(
 				btn(
 					text=name_ch1,
-					url="https://t.me/iBaghdady"
+					url="https://t.me/My1mind1"
 					)
 				).add(btn(
 					text=name_ch2,
-					url="https://t.me/JJGPP"
+					url="https://t.me/My1mind1"
 					)
 				)
 			)
